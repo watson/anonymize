@@ -145,3 +145,16 @@ test('Anonymize({ replace: fn }) should anonymize default patterns with function
   t.deepEqual(anonymize(obj), expected);
   t.end();
 });
+
+test('Anonymize({ replace: => undefined }) should delete default patterns', function (t) {
+  var anonymize = Anonymize({ replace: function (key, val) {
+    return undefined;
+  } });
+  var expected = {
+    foo: 'ok',
+    sub: { bar: 'ok' },
+    arr: [ 'ok', {} ]
+  };
+  t.deepEqual(anonymize(obj), expected);
+  t.end();
+});
