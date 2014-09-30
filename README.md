@@ -49,7 +49,7 @@ You can control both the patterns used to match the properties and the
 replacement values.
 
 By default properties containing the words `secret`, `pass`, `auth` or
-`token` have their values replaced with `******` The default patterns
+`token` have their values replaced with `******`. The default patterns
 are case insensitive.
 
 Both the patterns and the replacement value can be individually
@@ -107,7 +107,7 @@ var anonymize = require('anonymize')({
 });
 ```
 
-### Deeply nested objects
+## Deeply nested objects
 
 Yes, *anonymize* will also work on nested objects. So:
 
