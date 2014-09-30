@@ -1,0 +1,33 @@
+{
+  "name": "anonymize",
+  "version": "0.0.0",
+  "description": "Anonymize values in a list based on key name patterns",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watson/anonymize.git"
+  },
+  "keywords": [
+    "anon",
+    "anonymize",
+    "anonymizer",
+    "secret",
+    "sanitize",
+    "object"
+  ],
+  "author": "Thomas Watson Steen <w@tson.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watson/anonymize/issues"
+  },
+  "homepage": "https://github.com/watson/anonymize",
+  "dependencies": {
+    "traverse": "^0.6.6"
+  },
+  "devDependencies": {
+    "tape": "^3.0.0"
+  }
+}
